@@ -1,0 +1,6 @@
+body, ul, li, input, .ui-li-static, #to_details, #refresh, a#refresh, .ui-toolbar-back-btn {
+    font-family: 'Segoe UI Light';
+}
+.ui-title {
+    font-family: 'Segoe UI';
+  }

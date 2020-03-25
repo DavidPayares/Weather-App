@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <link rel="stylesheet" href="myWebApp.css" />
+        <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        <div data-role="page" id = "home">
+            <div data-role="header" data-theme="a">
+                <h1>My Weather App</h1>
+                <a id="refresh" href="#" data-icon="recycle"
+                 class="ui-btn-right">Refresh</a>
+            </div>
+
+            <div data-role="content">
+                <ul id="station_list" data-theme="c" data-role="listview" data-insert="true" data-filter="true" data-count-theme="c">
+                </ul>
+            </div>
+        </div>
+
+        <div data-role="page" id = "details">
+            <div data-role="header" data-add-back-btn="true" data-theme="a">
+                <h1>Station Details</h1>
+            </div>
+
+            <div data-role="content">
+                <img id="stationIcon"/>
+                <h3 id="stationName"></h3>
+                <ul data-role="listview" data-inset="true" data-theme="c">
+                    <li><span id="stationDescription"></span></li>
+                    <li><span id="stationTemperature"></span></li>
+                    <li><span id="stationHumidity"></span></li>
+                    <li><span id="stationPressure"></span></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <script src="myWebApp.js"></script>
+</html>
